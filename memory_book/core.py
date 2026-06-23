@@ -1,7 +1,7 @@
 """MemoryTree核心类 - 自组织Agent记忆框架"""
 
 import logging
-from typing import Any, Optional
+from typing import Optional
 
 from memory_book.db import Database
 from memory_book.llm import LLMClient
@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 SPLIT_TOKEN_THRESHOLD = 100000
 
 
-class MemoryTree:
+class MemoryBook:
     """
     自组织Agent记忆树
 

@@ -1,5 +1,5 @@
 """MemoryTree - 自组织Agent记忆框架"""
 
-from memory_book.core import MemoryTree
+from memory_book.core import MemoryBook
 
-__all__ = ["MemoryTree"]
+__all__ = ["MemoryBook"]

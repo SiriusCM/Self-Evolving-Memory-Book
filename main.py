@@ -2,7 +2,7 @@
 
 import logging
 
-from memory_book import MemoryTree
+from memory_book import MemoryBook
 
 # 配置日志
 logging.basicConfig(
@@ -12,13 +12,13 @@ logging.basicConfig(
 
 
 def main():
-    # 初始化记忆树
+    # 初始化记忆书
     # 支持环境变量: OPENAI_API_KEY, OPENAI_BASE_URL, OPENAI_MODEL
-    memory = MemoryTree(
+    memory = MemoryBook(
         db_path="memory_tree.db",
-        # api_key="your-api-key",
-        # base_url="https://api.openai.com/v1",
-        # model="gpt-4o-mini",
+        api_key="pk-c6e31ff0-772e-4fe7-b8d6-b48fe1363dfa",
+        base_url="http://ai-api.jdcloud.com/v1",
+        model="JoyAI-Code",
     )
 
     print("=" * 60)
