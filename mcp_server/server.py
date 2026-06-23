@@ -12,7 +12,7 @@ from mcp.server.fastmcp import FastMCP
 from memory_book.core import MemoryBook
 
 # 创建MCP Server
-app = FastMCP("memory-book")
+app = FastMCP("memory-book", host="0.0.0.0", port=8000)
 
 # 全局记忆树实例，由环境变量注入LLM参数
 _memory: MemoryBook | None = None
